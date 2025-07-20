@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background-color: black;
+}
+
+.page-container {
+  background-color: black;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #e60000 !important;
+  border: none;
+
+  &:hover {
+    background-color: #b30000 !important;
+  }
+}

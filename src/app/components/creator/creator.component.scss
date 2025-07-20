@@ -1,0 +1,41 @@
+.timeline {
+  position: relative;
+  list-style: none;
+  padding-left: 20px;
+  border-left: 2px solid #e60000;
+  margin-top: 2rem;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 20px;
+}
+
+.timeline-point {
+  position: absolute;
+  left: -11px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #e60000;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 1px;
+  background-color: #e60000; /* lime/verde neon */
+}
+
+.text-lime {
+  color: #e60000;
+  font-weight: 500;
+}

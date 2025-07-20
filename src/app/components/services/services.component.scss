@@ -1,0 +1,20 @@
+.card {
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  background-color: #1a1a1a;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 1px;
+  background-color: #e60000; /* lime/verde neon */
+}
+
+.text-lime {
+  color: #e60000;
+  font-weight: 500;
+}

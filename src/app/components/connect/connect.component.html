@@ -1,0 +1,113 @@
+<section class="container py-5">
+  <!-- TITLU CENTRAL -->
+  <div
+    class="section-title d-flex align-items-center justify-content-center text-center mb-5"
+  >
+    <div class="line me-3"></div>
+    <h3 class="text-lime m-0">Povestește-mi despre proiectul tău</h3>
+    <div class="line ms-3"></div>
+  </div>
+
+  <div class="row g-4 align-items-stretch">
+    <!-- FORMULAR: stânga -->
+    <div class="col-md-7">
+      <div class="card bg-dark text-white h-100 p-4">
+        <h4 class="fw-bold mb-4">Lasă-mi un mesaj și te contactez eu!</h4>
+        <form #contactForm="ngForm" (ngSubmit)="submitForm(contactForm)">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Name"
+              [(ngModel)]="formData.name"
+              required
+              #name="ngModel"
+            />
+            <div *ngIf="name.invalid && name.touched" class="text-danger small">
+              Te rugăm să introduci numele complet.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              [(ngModel)]="formData.email"
+              required
+              email
+              #email="ngModel"
+            />
+            <div
+              *ngIf="email.invalid && email.touched"
+              class="text-danger small"
+            >
+              Te rugăm să introduci o adresă de email validă.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="4"
+              name="message"
+              placeholder="Scrie mesajul tău"
+              [(ngModel)]="formData.message"
+              required
+              #message="ngModel"
+            ></textarea>
+            <div
+              *ngIf="message.invalid && message.touched"
+              class="text-danger small"
+            >
+              Te rugăm să scrii un mesaj.
+            </div>
+          </div>
+
+          <div class="text-end">
+            <button
+              type="submit"
+              class="btn btn-outline-danger send-email"
+              [disabled]="contactForm.invalid || isSubmitting"
+            >
+              <span
+                *ngIf="isSubmitting"
+                class="spinner-border spinner-border-sm me-2"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              {{ isSubmitting ? "Se trimite..." : "Trimite Mesaj" }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- CARD INFO: dreapta -->
+    <div class="col-md-5">
+      <div
+        class="card bg-dark text-white h-100 p-4 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="mb-4">
+          <p class="text-muted mb-1">Email</p>
+          <strong class="fs-5">select.events.media@gmail.com</strong>
+        </div>
+        <div class="mb-4">
+          <p class="text-muted mb-1">Phone</p>
+          <strong class="fs-5">0751894092</strong>
+        </div>
+        <div>
+          <p class="text-muted mb-1">Follow me</p>
+          <div class="d-flex gap-3 mt-2">
+            <i class="bi bi-facebook fs-4"></i>
+            <i class="bi bi-instagram fs-4"></i>
+            <i class="bi bi-linkedin fs-4"></i>
+            <i class="bi bi-twitter fs-4"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

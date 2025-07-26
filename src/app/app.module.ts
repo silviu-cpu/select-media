@@ -16,6 +16,10 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ContactComponentComponent } from './components/contact-component/contact-component.component';
 import { CreatorComponent } from './components/creator/creator.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ConnectComponent } from './components/connect/connect.component';
+import { FormsModule } from '@angular/forms';
+import { ProiecteComponent } from './components/proiecte/proiecte.component';
+import { ProcesComponent } from './components/proces/proces.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +37,11 @@ import { ServicesComponent } from './components/services/services.component';
     ContactComponentComponent,
     CreatorComponent,
     ServicesComponent,
+    ConnectComponent,
+    ProiecteComponent,
+    ProcesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

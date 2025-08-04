@@ -1,24 +1,20 @@
 .display-4 {
   text-transform: uppercase;
 }
-.marquee-wrapper {
-  overflow: hidden;
-  background-color: #c6f400; /* neon green background */
-  color: #000;
-  white-space: nowrap;
-  padding: 10px 0;
-  font-weight: bold;
-  font-size: 1.2rem;
+
+.hero-section {
+  background-color: #000;
 }
 
-.marquee-content {
-  display: inline-block;
-  white-space: nowrap;
-  animation: marquee 20s linear infinite;
+.highlight-box {
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(230, 0, 0, 0.5);
 }
 
-.marquee-content span {
-  padding-right: 3rem; /* spacing between repeats */
+.highlight-title {
+  color: #e60000;
 }
 
 /* Keyframes for smooth infinite scroll */

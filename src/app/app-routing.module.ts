@@ -9,17 +9,21 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProiecteComponent } from './components/proiecte/proiecte.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent }, // Default route
+  { path: '', component: HomepageComponent },
   { path: 'despre', component: DespreNoiComponent },
   { path: 'servicii', component: ServiciiComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'proiecte', component: ProiecteComponent },
   { path: 'testimoniale', component: TestimonialeComponent },
-  { path: '**', component: NotFoundComponent }, // Wildcard: redirect unknown paths to home
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

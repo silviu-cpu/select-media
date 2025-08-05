@@ -20,6 +20,12 @@ import { ConnectComponent } from './components/connect/connect.component';
 import { FormsModule } from '@angular/forms';
 import { ProiecteComponent } from './components/proiecte/proiecte.component';
 import { ProcesComponent } from './components/proces/proces.component';
+import { ProiecteFotoComponent } from './pages/proiecte-foto/proiecte-foto.component';
+import { ProiecteVideoComponent } from './pages/proiecte-video/proiecte-video.component';
+import { TurVirtualComponent } from './pages/tur-virtual/tur-virtual.component';
+import { SocialMediaComponent } from './pages/social-media/social-media.component';
+import { CampaniiElectoraleComponent } from './pages/campanii-electorale/campanii-electorale.component';
+import { ColaborariArtistiComponent } from './pages/colaborari-artisti/colaborari-artisti.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +46,12 @@ import { ProcesComponent } from './components/proces/proces.component';
     ConnectComponent,
     ProiecteComponent,
     ProcesComponent,
+    ProiecteFotoComponent,
+    ProiecteVideoComponent,
+    TurVirtualComponent,
+    SocialMediaComponent,
+    CampaniiElectoraleComponent,
+    ColaborariArtistiComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

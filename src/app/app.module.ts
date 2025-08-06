@@ -26,6 +26,10 @@ import { TurVirtualComponent } from './pages/tur-virtual/tur-virtual.component';
 import { SocialMediaComponent } from './pages/social-media/social-media.component';
 import { CampaniiElectoraleComponent } from './pages/campanii-electorale/campanii-electorale.component';
 import { ColaborariArtistiComponent } from './pages/colaborari-artisti/colaborari-artisti.component';
+import { ProiecteSuccessComponent } from './pages/proiecte-success/proiecte-success.component';
+import { ProiecteEditareComponent } from './pages/proiecte-editare/proiecte-editare.component';
+import { ProiecteFotoEvenimenteComponent } from './pages/proiecte-foto-evenimente/proiecte-foto-evenimente.component';
+import { ProiecteFotoProdusComponent } from './pages/proiecte-foto-produs/proiecte-foto-produs.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +56,10 @@ import { ColaborariArtistiComponent } from './pages/colaborari-artisti/colaborar
     SocialMediaComponent,
     CampaniiElectoraleComponent,
     ColaborariArtistiComponent,
+    ProiecteSuccessComponent,
+    ProiecteEditareComponent,
+    ProiecteFotoEvenimenteComponent,
+    ProiecteFotoProdusComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

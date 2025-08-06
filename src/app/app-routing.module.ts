@@ -13,6 +13,10 @@ import { TurVirtualComponent } from './pages/tur-virtual/tur-virtual.component';
 import { SocialMediaComponent } from './pages/social-media/social-media.component';
 import { CampaniiElectoraleComponent } from './pages/campanii-electorale/campanii-electorale.component';
 import { ColaborariArtistiComponent } from './pages/colaborari-artisti/colaborari-artisti.component';
+import { ProiecteSuccessComponent } from './pages/proiecte-success/proiecte-success.component';
+import { ProiecteEditareComponent } from './pages/proiecte-editare/proiecte-editare.component';
+import { ProiecteFotoEvenimenteComponent } from './pages/proiecte-foto-evenimente/proiecte-foto-evenimente.component';
+import { ProiecteFotoProdusComponent } from './pages/proiecte-foto-produs/proiecte-foto-produs.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -27,6 +31,14 @@ const routes: Routes = [
   { path: 'proiecte-social-media', component: SocialMediaComponent },
   { path: 'proiecte-campanii', component: CampaniiElectoraleComponent },
   { path: 'proiecte-artisti', component: ColaborariArtistiComponent },
+  { path: 'proiecte-succes', component: ProiecteSuccessComponent },
+  { path: 'proiecte-editare', component: ProiecteEditareComponent },
+  {
+    path: 'proiecte-foto-evenimente',
+    component: ProiecteFotoEvenimenteComponent,
+  },
+  { path: 'proiecte-foto-produs', component: ProiecteFotoProdusComponent },
+  { path: 'proiecte-editare', component: ProiecteEditareComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
